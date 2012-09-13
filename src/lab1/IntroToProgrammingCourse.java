@@ -9,19 +9,14 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroToProgrammingCourse {
-    private String courseName;
-    private String courseNumber;
-    private double credits;
+public class IntroToProgrammingCourse extends Course {
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
     }
 
-    public String getCourseNumber() {
-        return courseNumber;
-    }
+
 
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
@@ -29,11 +24,7 @@ public class IntroToProgrammingCourse {
                     "Error: courseNumber cannot be null of empty string");
             System.exit(0);
         }
-        this.courseNumber = courseNumber;
-    }
-
-    public double getCredits() {
-        return credits;
+        setCourseNumber(courseNumber);
     }
 
     public void setCredits(double credits) {
@@ -42,12 +33,9 @@ public class IntroToProgrammingCourse {
                     "Error: credits must be in the range 0.5 to 4.0");
             System.exit(0);
         }
-        this.credits = credits;
+        setCredits(credits);
     }
 
-    public String getCourseName() {
-        return courseName;
-    }
 
     public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
@@ -55,7 +43,7 @@ public class IntroToProgrammingCourse {
                     "Error: courseName cannot be null of empty string");
             System.exit(0);
         }
-        this.courseName = courseName;
+        setCourseName(courseName);
     }
 
     

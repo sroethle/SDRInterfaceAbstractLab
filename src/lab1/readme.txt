@@ -26,7 +26,7 @@ Instructions for Lab #1:
    architecture from the perspective of using abstraction and inheritance.
    (Remember, a startup class must have a main method)
 6. In your solution when can Liskov Substitution principle be used and when
-   is it not possible. Write down your anwer in this document, using the
+   is it not possible. Write down your answer in this document, using the
    white space below:
 
 
