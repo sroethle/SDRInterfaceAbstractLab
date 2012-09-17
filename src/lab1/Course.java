@@ -8,8 +8,7 @@ public abstract class Course {
 
    private String courseName;
    private String courseNumber;
-//    private double credits;
-//    private String prerequisites;
+
 
     public abstract void setCredits(double credits);
 
