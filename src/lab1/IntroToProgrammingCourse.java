@@ -26,10 +26,12 @@ public class IntroToProgrammingCourse extends Course {
     public void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,errorMessage);
-            System.exit(0);
+            
+        }else{
+            this.credits = credits;
         }
         
-        this.credits = credits;
+        
     }
     
    

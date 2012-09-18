@@ -25,9 +25,10 @@ public class IntroJavaCourse extends Course {
     public void setCredits(double credits) {
         if (credits < 0 || credits > 5.0) {
             System.out.println(errorMessage);
-            System.exit(0);
+        } else{
+            this.credits = credits;
         }
-        this.credits = credits;
+        
     }
 
     public final double getCredits() {

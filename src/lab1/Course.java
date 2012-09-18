@@ -15,13 +15,14 @@ public abstract class Course {
     public abstract void setPrerequisites(String prerequisites);
     
     public boolean setCourseNumber(String courseNumber) {
-        boolean successfulSet = true;
+        boolean successfulSet = false;
 
         if (courseNumber == null || courseNumber.length() == 0) {
             successfulSet = false;
-            System.exit(0);
+            
         } else {
             this.courseNumber = courseNumber;
+            successfulSet = true;
         }
         return successfulSet;
     }
@@ -30,9 +31,11 @@ public abstract class Course {
         boolean successfulSet = true;
         if (courseName == null || courseName.length() == 0) {
             successfulSet = false;
-            System.exit(0);
+           
+        }else{
+            this.courseName = courseName;
+    
         }
-        this.courseName = courseName;
         return successfulSet;
     }
        
