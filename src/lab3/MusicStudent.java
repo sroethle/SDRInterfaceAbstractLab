@@ -7,6 +7,8 @@ package lab3;
 /**
  *
  * @author Scotty
+ * The abstract super class should come first because the interface represents
+ * a property of the class.
  */
 public abstract class MusicStudent extends Person {
      private MusicalTalent musicalTalent;

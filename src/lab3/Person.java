@@ -7,6 +7,7 @@ package lab3;
 /**
  *
  * @author Scotty
+ * 
  */
 public abstract class Person {
  private String firstname;
