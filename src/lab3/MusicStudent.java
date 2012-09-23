@@ -8,10 +8,21 @@ package lab3;
  *
  * @author Scotty
  */
-public class MusicStudent extends Person {
+public abstract class MusicStudent extends Person {
+     private MusicalTalent musicalTalent;
     
     public MusicStudent (){
-        musicalTalent = new GuitarTalent();
+        
     }
+
+    public MusicalTalent getMusicalTalent() {
+        return musicalTalent;
+    }
+
+    public void setMusicalTalent(MusicalTalent musicalTalent) {
+        this.musicalTalent = musicalTalent;        
+    }
+    
+    
     
 }
